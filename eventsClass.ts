@@ -7,7 +7,7 @@ import path from "path";
 const welcomeEvent = async (message: string) => {
   const dateTime = `${format(new Date(), "dd/MM/yyyy\thh:mm:ss")}`;
   const uniqueID = `${uuid()}`;
-  const welcomeMessage = `${dateTime}\t${uniqueID}\t${message}`;
+  const welcomeMessage = `${dateTime}\t${uniqueID}\t${message}\n`;
   console.log(welcomeMessage);
 
   try {
